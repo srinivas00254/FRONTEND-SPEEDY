@@ -1,0 +1,74 @@
+.dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.dashboard h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dashboard form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dashboard form input,
+.dashboard form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.dashboard form button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dashboard form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.dashboard form h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .dashboard {
+        padding: 10px;
+    }
+
+    .dashboard form {
+        gap: 10px;
+    }
+
+    .dashboard form input,
+    .dashboard form select,
+    .dashboard form button[type="submit"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
